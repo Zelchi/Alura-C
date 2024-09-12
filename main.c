@@ -16,15 +16,18 @@ int main()
     printf("Escolha um numero: ");
     scanf("%d", &chute);
 
-    if (chute == numeroSecreto)
+    int acertou = (chute == numeroSecreto);
+    if (acertou)
     {
         printf("Você acertou!\n");
     }
     else
     {
-        if (chute > numeroSecreto){
+        int errou = (chute > numeroSecreto);
+        if (errou)
+        {
             printf("Você errou!, o numero é menor.\n");
-        } 
+        }
         else
         {
             printf("Você errou!, o numero é maior.\n");
