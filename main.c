@@ -13,25 +13,30 @@ int main()
     int numeroSecreto = 5;
     int chute;
 
-    printf("Escolha um numero: ");
-    scanf("%d", &chute);
+    for (int i = 1; i <= 3; i++)
+    {
+        printf("Tentativa %d de 3\n", i);
+        printf("Escolha um numero: ");
+        scanf("%d", &chute);
 
-    int acertou = (chute == numeroSecreto);
-    if (acertou)
-    {
-        printf("Você acertou!\n");
-    }
-    else
-    {
-        int errou = (chute > numeroSecreto);
-        if (errou)
+        int acertou = (chute == numeroSecreto);
+        if (acertou)
         {
-            printf("Você errou!, o numero é menor.\n");
+            printf("Você acertou!\n");
         }
         else
         {
-            printf("Você errou!, o numero é maior.\n");
+            int errou = (chute > numeroSecreto);
+            if (errou)
+            {
+                printf("Você errou!, o numero é menor.\n");
+            }
+            else
+            {
+                printf("Você errou!, o numero é maior.\n");
+            }
         }
+        printf("***********************\n");
     }
     return 0;
 }
