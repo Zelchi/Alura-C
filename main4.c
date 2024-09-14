@@ -3,12 +3,26 @@
 #include <time.h>
 #include <locale.h>
 
-int main() //Batata
+int main() // Batata
 {
     setlocale(LC_ALL, "pt_BR.UTF-8");
-    printf("************************************\n");
-    printf("* Bem vindo ao Jogo de Adivinhação *\n");
-    printf("************************************\n");
+    printf("+-----------------------------------------------------+\n");
+    printf("           __________                                 \n");
+    printf("         .'----------`.                              \n");
+    printf("         | .--------. |                             \n");
+    printf("         | |########| |       __________              \n");
+    printf("         | |########| |      /__________\\             \n");
+    printf(".--------| `--------' |------|    --=-- |-------------.\n");
+    printf("|        `----,-.-----'      |o ======  |             | \n");
+    printf("|       ______|_|_______     |__________|             | \n");
+    printf("|      /  ############  \\                             | \n");
+    printf("|     /  ##############  \\                            | \n");
+    printf("|     ^^^^^^^^^^^^^^^^^^^^                            | \n");
+    printf("+-----------------------------------------------------+\n");
+
+    printf("        ************************************\n");
+    printf("        * Bem vindo ao Jogo de Adivinhação *\n");
+    printf("        ************************************\n");
 
     int chute;
     int acertou = 0;
@@ -22,7 +36,7 @@ int main() //Batata
     int numeroDeTentativas;
     printf("Escolha a dificuldade:\n");
     printf("(1) Fácil (2) Médio (3) Difícil\n\n");
-    scanf("%d", &nivel);
+    scanf("Escolhido: (%d)", &nivel);
 
     switch (nivel)
     {
@@ -39,7 +53,6 @@ int main() //Batata
 
     while (!acertou)
     {
-
         printf("Qual é o seu %d. chute?\n\n", tentativas);
         scanf("%d", &chute);
 
