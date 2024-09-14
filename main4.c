@@ -3,7 +3,7 @@
 #include <time.h>
 #include <locale.h>
 
-int main()
+int main() //Batata
 {
     setlocale(LC_ALL, "pt_BR.UTF-8");
     printf("************************************\n");
