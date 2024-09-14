@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
-int main() {
-  int soma = 0;
-  for(int i = 1; i <= 100; i++) {
-    soma = soma + i;
-  }
+int main()
+{
+  int segundos = time(0);
+  srand(segundos);
 
-  printf("A soma eh %d", soma);
+  int numeroAleatorio = rand() % 100;
+  printf("%d", numeroAleatorio);
 }
